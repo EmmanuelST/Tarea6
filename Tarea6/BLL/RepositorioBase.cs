@@ -31,6 +31,7 @@ namespace Tarea6.BLL
             {
                 throw;
             }
+            
 
             return paso;
         }
@@ -49,6 +50,7 @@ namespace Tarea6.BLL
             {
                 throw;
             }
+            
 
             return paso;
         }
@@ -64,6 +66,7 @@ namespace Tarea6.BLL
             {
                 throw;
             }
+           
 
             return entity;
         }
@@ -79,6 +82,7 @@ namespace Tarea6.BLL
             {
                 throw;
             }
+            
 
             return lista;
         }
@@ -97,6 +101,7 @@ namespace Tarea6.BLL
             {
                 throw;
             }
+            
 
             return paso;
         }

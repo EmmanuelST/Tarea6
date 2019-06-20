@@ -17,25 +17,65 @@ namespace Tarea6Tests.BLL
         public void GuardarTest()
         {
             RepositorioBase<Personas> db = new RepositorioBase<Personas>();
-            List<TipoPersonas> lista = new List<TipoPersonas>();
-
-            lista.Add(new TipoPersonas() { IdPersona = 1, Nombre = "Prueba"});
-            lista.Add(new TipoPersonas() { IdPersona = 1, Nombre = "Prueba2" });
-            lista.Add(new TipoPersonas() { IdPersona = 1, Nombre = "Prueba3" });
+           
 
             Personas persona = new Personas()
             { IdPersona = 0,Dni = 1,Nombre = "nombre",Matemo = "prueba",Paterno = "prueba",FechaNacimiento = DateTime.Now
-            ,Telefonon = "222222",Correo = "Prueba@",Sexo = 'M',Direccion = "prueba",Tipo =  lista};
+            ,Telefonon = "222222",Correo = "Prueba@",Sexo = 'M',Direccion = "prueba",IdTipoPersona = 1};
             
             Assert.IsTrue(db.Guardar(persona));
         }
 
+        [TestMethod()]
+        public void ModificarTest()
+        {
+            RepositorioBase<Personas> db = new RepositorioBase<Personas>();
+            Personas persona = new Personas()
+            {
+                IdPersona = 1,
+                Dni = 1,
+                Nombre = "nombre2",
+                Matemo = "prueba2",
+                Paterno = "prueba",
+                FechaNacimiento = DateTime.Now,
+                Telefonon = "222222",
+                Correo = "Prueba@",
+                Sexo = 'M',
+                Direccion = "prueba",
+                IdTipoPersona = 1
+            };
+
+            Assert.IsTrue(db.Modificar(persona));
+
+        }
+
+        [TestMethod()]
+        public void BuscarTest()
+        {
+            RepositorioBase<Personas> db = new RepositorioBase<Personas>();
+
+            Assert.IsNotNull(db.Buscar(3));
+
+        }
+
+        [TestMethod()]
+        public void GetListTest()
+        {
+            RepositorioBase<Personas> db = new RepositorioBase<Personas>();
+
+            Assert.IsNotNull(db.GetList( p=>true));
+
+        }
+
+        [TestMethod()]
         public void EliminarTest()
         {
             RepositorioBase<Personas> db = new RepositorioBase<Personas>();
 
-            Assert.IsTrue(db.Eliminar(1));
+            Assert.IsTrue(db.Eliminar(3));
         }
+
+       
 
 
     }

@@ -11,6 +11,7 @@ namespace Tarea6.DAL
     class Contexto : DbContext
     {
         public DbSet<Personas>Persona { get; set; }
+        public DbSet<TipoPersonas> TipoPersona { get; set; }
         public Contexto() : base("Constr")
         {
 
