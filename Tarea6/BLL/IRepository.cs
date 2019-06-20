@@ -11,7 +11,7 @@ namespace Tarea6.BLL
     {
 
         bool Guardar(T entity);
-        bool Modificar(int id);
+        bool Modificar(T entity);
         T Buscar(int id);
         List<T> GetList(Expression<Func<T, bool>> expression);
         bool Eliminar(int id);
