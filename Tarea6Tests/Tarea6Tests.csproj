@@ -64,6 +64,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="BLL\CargosTest.cs" />
+    <Compile Include="BLL\CategoriasTest.cs" />
     <Compile Include="BLL\ClientesTest.cs" />
     <Compile Include="BLL\PersonasTest.cs" />
     <Compile Include="BLL\RepositorioBaseTests.cs" />
