@@ -24,7 +24,7 @@ namespace Tarea6.BLL
             
             try
             {
-                if (db.Set<T>().Add(entity) != null;
+                if (db.Set<T>().Add(entity) != null)
                 paso = db.SaveChanges() > 0;
 
             }catch(Exception)
