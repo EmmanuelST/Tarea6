@@ -58,6 +58,7 @@
     <Compile Include="DAL\Contexto.cs" />
     <Compile Include="Entidades\Categorias.cs" />
     <Compile Include="Entidades\DetalleVentas.cs" />
+    <Compile Include="Entidades\Marcas.cs" />
     <Compile Include="Entidades\Personas.cs" />
     <Compile Include="Entidades\Productos.cs" />
     <Compile Include="Entidades\TipoPersonas.cs" />
