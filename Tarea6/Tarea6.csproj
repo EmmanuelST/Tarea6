@@ -56,6 +56,7 @@
     <Compile Include="BLL\IRepository.cs" />
     <Compile Include="BLL\RepositorioBase.cs" />
     <Compile Include="DAL\Contexto.cs" />
+    <Compile Include="Entidades\DetalleVentas.cs" />
     <Compile Include="Entidades\Personas.cs" />
     <Compile Include="Entidades\TipoPersonas.cs" />
     <Compile Include="Entidades\Ventas.cs" />

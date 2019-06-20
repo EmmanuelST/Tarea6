@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace Tarea6.Entidades
 {
     class Ventas
     {
+        [Key]
         public int IdVenta { get; set; }
         public int IdUsuario { get; set; }
         public int IdCliente { get; set; }
