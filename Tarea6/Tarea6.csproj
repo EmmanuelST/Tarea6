@@ -70,6 +70,7 @@
     <Compile Include="Entidades\Personas.cs" />
     <Compile Include="Entidades\Productos.cs" />
     <Compile Include="Entidades\Proveedores.cs" />
+    <Compile Include="Entidades\TipoComprobantes.cs" />
     <Compile Include="Entidades\TipoPersonas.cs" />
     <Compile Include="Entidades\UnidadMedidas.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
