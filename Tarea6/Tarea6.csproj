@@ -66,6 +66,7 @@
     <Compile Include="Entidades\Estados.cs" />
     <Compile Include="Entidades\Imagenes.cs" />
     <Compile Include="Entidades\Marcas.cs" />
+    <Compile Include="Entidades\Modelos.cs" />
     <Compile Include="Entidades\Permisos.cs" />
     <Compile Include="Entidades\Personas.cs" />
     <Compile Include="Entidades\Productos.cs" />
