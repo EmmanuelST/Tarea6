@@ -63,6 +63,7 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="BLL\ClientesTest.cs" />
     <Compile Include="BLL\PersonasTest.cs" />
     <Compile Include="BLL\RepositorioBaseTests.cs" />
     <Compile Include="BLL\TipoPersonasTest.cs" />
