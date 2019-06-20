@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Tarea6.Entidades
 {
-    class Cargos
+    public class Cargos
     {
         [Key]
         public int IdCargo { get; set; }
