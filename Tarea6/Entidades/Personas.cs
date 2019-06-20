@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Tarea6.Entidades
 {
-     public class Personas
+    public class Personas
     {
         [Key]
         public int IdPersona { get; set; }
@@ -19,8 +19,9 @@ namespace Tarea6.Entidades
         public string Telefonon { get; set; }
         public string Correo { get; set; }
         public char Sexo { get; set; }
+        public int IdImagen { get; set; }
         public string Direccion { get; set; } 
-        public virtual List<TipoPersonas>Tipo { get; set; }
+        public int IdTipoPersona { get; set; }
 
     }
 }
