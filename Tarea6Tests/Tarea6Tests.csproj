@@ -67,6 +67,11 @@
     <Compile Include="BLL\CategoriasTest.cs" />
     <Compile Include="BLL\ClientesTest.cs" />
     <Compile Include="BLL\ComprasTest.cs" />
+    <Compile Include="BLL\EmpleadosTest.cs" />
+    <Compile Include="BLL\EstadosTest.cs" />
+    <Compile Include="BLL\ImagenesTest.cs" />
+    <Compile Include="BLL\MarcasTest.cs" />
+    <Compile Include="BLL\ModelosTest.cs" />
     <Compile Include="BLL\PersonasTest.cs" />
     <Compile Include="BLL\RepositorioBaseTests.cs" />
     <Compile Include="BLL\TipoPersonasTest.cs" />

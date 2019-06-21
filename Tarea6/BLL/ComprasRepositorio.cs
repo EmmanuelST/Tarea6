@@ -31,13 +31,13 @@ namespace Tarea6.BLL
                 foreach (var item in entity.Detalles)
                 {
 
-                    if (item.IdCompra == 0)
-                        estado = EntityState.Added;
+                    if (item.IdDetalleCompra.Equals(0))
+                        db.Entry(item).State = EntityState.Added;
                     else
-                        estado = EntityState.Modified;
+                        db.Entry(item).State = EntityState.Modified;
 
 
-                    db.Entry(item).State = estado;
+
                 }
 
                 db.Entry(entity).State = EntityState.Modified;

@@ -57,11 +57,11 @@ namespace Tarea6Tests.BLL
             lista.Add(new DetalleCompras()
             {
                 IdCompra = 1,
-                IdDetalleCompra = 1,
+                IdDetalleCompra = 0,
                 Unidades = 100,
                 Total = 100,
-                CostoUnidad = 50,
-                IdProducto = 1
+                CostoUnidad = 600,
+                IdProducto = 8
             });
             
 

@@ -16,6 +16,11 @@ namespace Tarea6.DAL
         public DbSet<Cargos>Cargo { get; set; }
         public DbSet<Categorias>Categoria { get; set; }
         public DbSet<Compras>Compra { get; set; }
+        public DbSet<Empleados>Empleado { get; set; }
+        public DbSet<Estados>Estado { get; set; }
+        public DbSet<Imagenes>Imagen { get; set; }
+        public DbSet<Marcas>Marca { get; set;}
+        public DbSet<Modelos>Modelo { get; set; }
         public Contexto() : base("Constr")
         {
 
