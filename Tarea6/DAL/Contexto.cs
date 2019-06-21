@@ -23,6 +23,7 @@ namespace Tarea6.DAL
         public DbSet<Modelos>Modelo { get; set; }
         public DbSet<Permisos>Permiso { get; set; }
         public DbSet<Productos>Producto { get; set; }
+        public DbSet<Proveedores>Proveedor { get; set; }
         public Contexto() : base("Constr")
         {
 
