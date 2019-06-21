@@ -26,6 +26,7 @@ namespace Tarea6.DAL
         public DbSet<Proveedores>Proveedor { get; set; }
         public DbSet<TipoComprobantes>TipoComprobante { get; set; }
         public DbSet<UnidadMedidas>UnidadMedida { get; set; }
+        public DbSet<Usuario_Has_Permisos>Usuario_Has_Permiso { get; set; }
         public Contexto() : base("Constr")
         {
 
