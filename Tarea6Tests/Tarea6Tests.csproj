@@ -81,6 +81,7 @@
     <Compile Include="BLL\TipoPersonasTest.cs" />
     <Compile Include="BLL\UnidadMedidasTest.cs" />
     <Compile Include="BLL\UsuarioHasPermisosTest.cs" />
+    <Compile Include="BLL\UsuariosTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
