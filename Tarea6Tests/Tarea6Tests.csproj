@@ -72,6 +72,7 @@
     <Compile Include="BLL\ImagenesTest.cs" />
     <Compile Include="BLL\MarcasTest.cs" />
     <Compile Include="BLL\ModelosTest.cs" />
+    <Compile Include="BLL\PermisosTest.cs" />
     <Compile Include="BLL\PersonasTest.cs" />
     <Compile Include="BLL\RepositorioBaseTests.cs" />
     <Compile Include="BLL\TipoPersonasTest.cs" />

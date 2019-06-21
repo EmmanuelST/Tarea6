@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tarea6.BLL;
+using Tarea6.Entidades;
 
 namespace Tarea6Tests.BLL
 {
@@ -13,12 +15,12 @@ namespace Tarea6Tests.BLL
         [TestMethod()]
         public void GuardarTest()
         {
-            RepositorioBase<Marcas> db = new RepositorioBase<Marcas>();
+            RepositorioBase<Modelos> db = new RepositorioBase<Modelos>();
 
-            Marcas entity = new Marcas()
+            Modelos entity = new Modelos()
             {
-                IdMarca = 0,
-                NombreMarca = "Prueba1"
+                IdModelo = 0,
+                NombreModelo = "Prueba1"
             };
 
             Assert.IsTrue(db.Guardar(entity));
@@ -27,12 +29,12 @@ namespace Tarea6Tests.BLL
         [TestMethod()]
         public void ModificarTest()
         {
-            RepositorioBase<Marcas> db = new RepositorioBase<Marcas>();
+            RepositorioBase<Modelos> db = new RepositorioBase<Modelos>();
 
-            Marcas entity = new Marcas()
+            Modelos entity = new Modelos()
             {
-                IdMarca = 1,
-                NombreMarca = "Prueba2"
+                IdModelo = 1,
+                NombreModelo = "Prueba2"
             };
 
 
@@ -43,7 +45,7 @@ namespace Tarea6Tests.BLL
         [TestMethod()]
         public void BuscarTest()
         {
-            RepositorioBase<Marcas> db = new RepositorioBase<Marcas>();
+            RepositorioBase<Modelos> db = new RepositorioBase<Modelos>();
 
             Assert.IsNotNull(db.Buscar(1));
 
@@ -52,7 +54,7 @@ namespace Tarea6Tests.BLL
         [TestMethod()]
         public void GetListTest()
         {
-            RepositorioBase<Marcas> db = new RepositorioBase<Marcas>();
+            RepositorioBase<Modelos> db = new RepositorioBase<Modelos>();
 
             Assert.IsNotNull(db.GetList(t => true));
 
@@ -61,7 +63,7 @@ namespace Tarea6Tests.BLL
         [TestMethod()]
         public void EliminarTest()
         {
-            RepositorioBase<Marcas> db = new RepositorioBase<Marcas>();
+            RepositorioBase<Modelos> db = new RepositorioBase<Modelos>();
 
             Assert.IsTrue(db.Eliminar(1));
         }
