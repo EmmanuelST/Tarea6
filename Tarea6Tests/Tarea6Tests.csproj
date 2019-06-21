@@ -79,6 +79,7 @@
     <Compile Include="BLL\RepositorioBaseTests.cs" />
     <Compile Include="BLL\TipoComprobantesTest.cs" />
     <Compile Include="BLL\TipoPersonasTest.cs" />
+    <Compile Include="BLL\UnidadMedidasTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
