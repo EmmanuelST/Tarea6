@@ -29,6 +29,8 @@ namespace Tarea6.DAL
         public DbSet<Usuario_Has_Permisos>Usuario_Has_Permiso { get; set; }
         public DbSet<Usuarios>Usuario { get; set; }
         public DbSet<Ventas>Venta { get; set; }
+        public DbSet<DetalleCompras>DetalleCompra { get; set; }
+        public DbSet<DetalleVentas>DetalleVenta { get; set; }
         public Contexto() : base("Constr")
         {
 

@@ -15,7 +15,31 @@ namespace Tarea6Tests.BLL
         [TestMethod()]
         public void GuardarTest()
         {
-            RepositorioBase<Ventas> db = new RepositorioBase<Ventas>();
+            VentasRespositorio db = new VentasRespositorio();
+            List<DetalleVentas> lista = new List<DetalleVentas>();
+
+            lista.Add(new DetalleVentas()
+            {
+                IdDetalleVenta = 0,
+                IdProducto = 1,
+                IdVenta = 0,
+                CostoUnidad = 50,
+                DescuentoUnidad = 10,
+                Total = 100,
+                Unidades = 5
+            });
+
+            lista.Add(new DetalleVentas()
+            {
+                IdDetalleVenta = 0,
+                IdProducto = 2,
+                IdVenta = 0,
+                CostoUnidad = 52,
+                DescuentoUnidad = 12,
+                Total = 102,
+                Unidades = 2
+            });
+
 
             Ventas entity = new Ventas()
             {
@@ -26,7 +50,8 @@ namespace Tarea6Tests.BLL
                 Igv = 1,
                 CostoVenta = 500,
                 FechaVenta = DateTime.Now,
-                SubTotal = 50
+                SubTotal = 50,
+                Detalles = lista
             };
 
             Assert.IsTrue(db.Guardar(entity));
@@ -35,7 +60,20 @@ namespace Tarea6Tests.BLL
         [TestMethod()]
         public void ModificarTest()
         {
-            RepositorioBase<Ventas> db = new RepositorioBase<Ventas>();
+            VentasRespositorio db = new VentasRespositorio();
+
+            List<DetalleVentas> lista = new List<DetalleVentas>();
+
+            lista.Add(new DetalleVentas()
+            {
+                IdDetalleVenta = 0,
+                IdProducto = 1,
+                IdVenta = 1,
+                CostoUnidad = 50,
+                DescuentoUnidad = 10,
+                Total = 100,
+                Unidades = 5
+            });
 
             Ventas entity = new Ventas()
             {
@@ -44,9 +82,10 @@ namespace Tarea6Tests.BLL
                 IdComprobante = 1,
                 IdUsuario = 1,
                 Igv = 1,
-                CostoVenta = 50,
+                CostoVenta = 500,
                 FechaVenta = DateTime.Now,
-                SubTotal = 500
+                SubTotal = 50,
+                Detalles = lista
             };
 
 
@@ -58,7 +97,7 @@ namespace Tarea6Tests.BLL
         [TestMethod()]
         public void BuscarTest()
         {
-            RepositorioBase<Ventas> db = new RepositorioBase<Ventas>();
+            VentasRespositorio db = new VentasRespositorio();
 
             Assert.IsNotNull(db.Buscar(1));
 
@@ -67,7 +106,7 @@ namespace Tarea6Tests.BLL
         [TestMethod()]
         public void GetListTest()
         {
-            RepositorioBase<Ventas> db = new RepositorioBase<Ventas>();
+            VentasRespositorio db = new VentasRespositorio();
 
             Assert.IsNotNull(db.GetList(t => true));
 
@@ -76,7 +115,7 @@ namespace Tarea6Tests.BLL
         [TestMethod()]
         public void EliminarTest()
         {
-            RepositorioBase<Ventas> db = new RepositorioBase<Ventas>();
+            VentasRespositorio db = new VentasRespositorio();
 
             Assert.IsTrue(db.Eliminar(1));
         }

@@ -9,33 +9,33 @@ using Tarea6.Entidades;
 
 namespace Tarea6.BLL
 {
-    public class ComprasRepositorio : RepositorioBase<Compras>
+    public class VentasRespositorio : RepositorioBase<Ventas>
     {
-        public override bool Modificar(Compras entity)
+        public override bool Modificar(Ventas entity)
         {
             bool paso = false;
             Contexto db = new Contexto();
-            RepositorioBase<DetalleCompras> dbDetalle = new RepositorioBase<DetalleCompras>();
-            
+            RepositorioBase<DetalleVentas> dbDetalle = new RepositorioBase<DetalleVentas>();
+
             try
             {
 
-                List<DetalleCompras> anterior = new List<DetalleCompras>();
-                anterior = dbDetalle.GetList(C=> C.IdCompra == entity.IdCompra);
+                List<DetalleVentas> anterior = new List<DetalleVentas>();
+                anterior = dbDetalle.GetList(C => C.IdVenta == entity.IdVenta);
                 anterior.Count();
 
-                foreach(var item in anterior)
+                foreach (var item in anterior)
                 {
-                    if(!entity.Detalles.Any(C =>C.IdDetalleCompra == item.IdDetalleCompra))
+                    if (!entity.Detalles.Any(C => C.IdDetalleVenta == item.IdDetalleVenta))
                     {
-                        dbDetalle.Eliminar(item.IdDetalleCompra);
+                        dbDetalle.Eliminar(item.IdDetalleVenta);
                     }
                 }
 
                 foreach (var item in entity.Detalles)
                 {
 
-                    if (item.IdDetalleCompra == 0)
+                    if (item.IdDetalleVenta == 0)
                         db.Entry(item).State = EntityState.Added;
                     else
                         db.Entry(item).State = EntityState.Modified;
@@ -47,7 +47,7 @@ namespace Tarea6.BLL
                 paso = db.SaveChanges() > 0;
 
             }
-            catch(Exception)
+            catch (Exception)
             {
                 throw;
             }
@@ -60,5 +60,6 @@ namespace Tarea6.BLL
 
             return paso;
         }
+
     }
 }

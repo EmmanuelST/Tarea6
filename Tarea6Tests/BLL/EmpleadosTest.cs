@@ -36,7 +36,7 @@ namespace Tarea6Tests.BLL
 
             Empleados empleado = new Empleados()
             {
-                IdEmpleado = 3,
+                IdEmpleado = 1,
                 IdCargo = 1,
                 IdEstado = 1,
                 IdPersona = 1,
@@ -52,7 +52,7 @@ namespace Tarea6Tests.BLL
         {
             RepositorioBase<Empleados> db = new RepositorioBase<Empleados>();
 
-            Assert.IsNotNull(db.Buscar(3));
+            Assert.IsNotNull(db.Buscar(1));
 
         }
 
@@ -70,7 +70,7 @@ namespace Tarea6Tests.BLL
         {
             RepositorioBase<Empleados> db = new RepositorioBase<Empleados>();
 
-            Assert.IsTrue(db.Eliminar(2));
+            Assert.IsTrue(db.Eliminar(1));
         }
     }
 }

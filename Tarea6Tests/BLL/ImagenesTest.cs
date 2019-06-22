@@ -47,7 +47,7 @@ namespace Tarea6Tests.BLL
         {
             RepositorioBase<Imagenes> db = new RepositorioBase<Imagenes>();
 
-            Assert.IsNotNull(db.Buscar(3));
+            Assert.IsNotNull(db.Buscar(1));
 
         }
 
@@ -65,7 +65,7 @@ namespace Tarea6Tests.BLL
         {
             RepositorioBase<Imagenes> db = new RepositorioBase<Imagenes>();
 
-            Assert.IsTrue(db.Eliminar(2));
+            Assert.IsTrue(db.Eliminar(1));
         }
     }
 }

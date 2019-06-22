@@ -54,7 +54,7 @@ namespace Tarea6Tests.BLL
         {
             RepositorioBase<Personas> db = new RepositorioBase<Personas>();
 
-            Assert.IsNotNull(db.Buscar(3));
+            Assert.IsNotNull(db.Buscar(1));
 
         }
 
@@ -72,7 +72,7 @@ namespace Tarea6Tests.BLL
         {
             RepositorioBase<Personas> db = new RepositorioBase<Personas>();
 
-            Assert.IsTrue(db.Eliminar(3));
+            Assert.IsTrue(db.Eliminar(1));
         }
 
        

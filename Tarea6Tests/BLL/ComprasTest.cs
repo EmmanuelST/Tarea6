@@ -23,7 +23,8 @@ namespace Tarea6Tests.BLL
                 Unidades = 100,
                 Total = 100,
                 CostoUnidad = 50,
-                IdProducto = 1 });
+                IdProducto = 1
+            });
             lista.Add(new DetalleCompras()
             {
                 IdCompra = 0,
@@ -57,22 +58,22 @@ namespace Tarea6Tests.BLL
             lista.Add(new DetalleCompras()
             {
                 IdCompra = 1,
-                IdDetalleCompra = 0,
-                Unidades = 100,
-                Total = 100,
-                CostoUnidad = 600,
-                IdProducto = 8
+                IdDetalleCompra = 1,
+                Unidades = 3,
+                Total = 3,
+                CostoUnidad = 3,
+                IdProducto = 3
             });
-            
+
 
             Compras compra = new Compras()
             {
                 IdCompra = 1,
-                IdComprobante = 1,
-                IdProveedor = 1,
+                IdComprobante = 2,
+                IdProveedor = 2,
                 IdUsuario = 1,
                 FechaCompra = DateTime.Now,
-                CostoCompra = 103,
+                CostoCompra = 102,
                 Detalles = lista
             };
 

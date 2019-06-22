@@ -18,6 +18,20 @@ namespace Tarea6.Entidades
         public double Igv { get;set; }
         public double SubTotal { get;set; }
         public double CostoVenta { get; set; }
+        public virtual List<DetalleVentas>Detalles { get; set; }
+
+        public Ventas()
+        {
+            IdVenta = 0;
+            IdUsuario = 0;
+            IdCliente = 0;
+            IdComprobante = 0;
+            FechaVenta = DateTime.Now;
+            Igv = 0;
+            SubTotal = 0;
+            CostoVenta = 0;
+            Detalles = new List<DetalleVentas>();
+        }
 
     }
 }
