@@ -66,6 +66,7 @@
     <Compile Include="BLL\CargosTest.cs" />
     <Compile Include="BLL\CategoriasTest.cs" />
     <Compile Include="BLL\ClientesTest.cs" />
+    <Compile Include="BLL\ComprasDetallesTest.cs" />
     <Compile Include="BLL\ComprasTest.cs" />
     <Compile Include="BLL\EmpleadosTest.cs" />
     <Compile Include="BLL\EstadosTest.cs" />
@@ -76,12 +77,12 @@
     <Compile Include="BLL\PersonasTest.cs" />
     <Compile Include="BLL\ProductosTest.cs" />
     <Compile Include="BLL\ProveedoresTest.cs" />
-    <Compile Include="BLL\RepositorioBaseTests.cs" />
     <Compile Include="BLL\TipoComprobantesTest.cs" />
     <Compile Include="BLL\TipoPersonasTest.cs" />
     <Compile Include="BLL\UnidadMedidasTest.cs" />
     <Compile Include="BLL\UsuarioHasPermisosTest.cs" />
     <Compile Include="BLL\UsuariosTest.cs" />
+    <Compile Include="BLL\VentasDetallesTest.cs" />
     <Compile Include="BLL\VentasTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
